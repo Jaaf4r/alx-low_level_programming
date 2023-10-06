@@ -10,19 +10,19 @@ int	main(void)
 	int	b;
 	int	c;
 
-	a = 0;
-	while (a <= '7')
+	a = 48;
+	while (a <= 55)
 	{
 		b = a + 1;
-		while (b <= '8')
+		while (b <= 56)
 		{
 			c = b + 1;
-			while (c <= '9')
+			while (c <= 57)
 			{
 				putchar(a);
 				putchar(b);
 				putchar(c);
-				if (a < '7')
+				if (a < 55)
 				{
 					putchar(',');
 					putchar(' ');
