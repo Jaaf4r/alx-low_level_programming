@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - write a program that finds and prints the sum of the even-valued terms
- * 
+ * main - write a program that finds and prints the sum
+ * of the even-valued terms
+ *
  * Return: Always 0.
  */
 int main(void)
