@@ -12,7 +12,7 @@
 void	print_number(int n)
 {
 	unsigned int	nbr;
-	
+
 	nbr = n;
 	if (n < 0)
 	{
