@@ -2,18 +2,17 @@
 /**
  *puts_half - prints last half of a string
  *
- *@str: input
+ *@str:input
  *
- *Return: void
+ *Return:void
  *
  */
-
 void	puts_half(char *str)
 {
-	int	i, length, half;
+	int i, length, half;
 
 	length = 0;
-	while (str[length])
+	while (str[length] != '\0')
 	{
 		length++;
 	}
@@ -28,7 +27,7 @@ void	puts_half(char *str)
 	else
 	{
 		half = (length - 1) / 2;
-		for (i = half; i < length; i++)
+		for (i = half + 1; i < length; i++)
 		{
 			_putchar(str[i]);
 		}
