@@ -1,25 +1,6 @@
 #include "main.h"
 
 /**
- * *_strlowcase - lowcase all words of a string
- * @str: pointer
- * Return: lowcase string
- */
-char	*_strlowcase(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] += 32;
-		i++;
-	}
-	return (str);
-}
-
-/**
  * *cap_string - capitalize all words of a string
  * @str: pointer
  * Return: capitalized string
@@ -31,7 +12,13 @@ char	*cap_string(char *str)
 
 	i = 0;
 	flag = 1;
-	_strlowcase(str);
+	while (str[i])
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
+	}
+	i = 0;
 	while (str[i])
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')

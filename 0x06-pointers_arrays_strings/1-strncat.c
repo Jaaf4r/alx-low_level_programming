@@ -14,10 +14,10 @@ char	*_strncat(char *dest, char *src, int n)
 	int i, j;
 
 	i = 0;
-	j = 0;
 	while (dest[i])
 		i++;
-	while (src[j] && i < n)
+	j = 0;
+	while (src[j] && j < n)
 	{
 		dest[i + j] = src[j];
 		j++;
