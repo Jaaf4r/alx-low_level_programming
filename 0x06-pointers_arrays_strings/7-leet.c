@@ -2,7 +2,7 @@
 
 /**
  * leet - transform to leet
- * @s: char array 
+ * @s: char array
  * Return: s transformed
  */
 
