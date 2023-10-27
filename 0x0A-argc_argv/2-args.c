@@ -2,8 +2,8 @@
 
 /**
  * main - prints all arguments it receives
- * @argc: n args
- * @argv: arr args
+ * @ac: n args
+ * @av: arr args
  * Return: 0
  */
 

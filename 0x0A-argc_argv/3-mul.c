@@ -3,8 +3,8 @@
 
 /**
  * main - multiplies two numbers
- * @argc: n args
- * @argv: arr args
+ * @ac: n args
+ * @av: arr args
  * Return: 0
  */
 

@@ -2,8 +2,8 @@
 
 /**
  * main - prints number of params, followed by a new line
- * @argc: n args
- * @argv: arr args
+ * @ac: n args
+ * @av: arr args
  * Return: 0
  */
 

@@ -2,8 +2,8 @@
 
 /**
  * main - function
- * @argc: offset count
- * @argv: offset value
+ * @ac: offset count
+ * @av: offset value
  * Return: 0
  */
 
