@@ -12,9 +12,8 @@
  */
 int	main(int ac, char *av[])
 {
-	int	value, c;
+	int	value, c = 0;
 
-	c = 0;
 	if (ac != 2)
 	{
 		printf("Error\n");
@@ -22,8 +21,7 @@ int	main(int ac, char *av[])
 	}
 	value = atoi(av[1]);
 	if (value < 0)
-	{
-		printf("0\n");
+	{	printf("0\n");
 		return (0);
 	}
 	if (value % 25 >= 0)
