@@ -3,31 +3,31 @@
 
 /**
  * _isdigit - checks digit
+ *
  * @s: string to check
  *
  * Return: 1 if digit, 0 if not
  */
 int	_isdigit(char *s)
 {
-	int	count = 0;
+	int count = 0;
 
 	while (*(s + count))
 	{
 		if (*(s + count) > '9' || *(s + count) < '0')
-		{
 			return (0);
-		}
 		count++;
 	}
 	return (1);
 }
 
 /**
- * main - prints multiple of two numbers.
- * @ac: argument count
+ * main - prints multiple of to numbers
+ *
+ * @ac: number of arguments
  * @av: arguments passed
  *
- * Return: 0 on Success
+ * Return: 0 on success
  */
 int	main(int ac, char *av[])
 {
@@ -39,6 +39,7 @@ int	main(int ac, char *av[])
 		printf("Error\n");
 		exit(98);
 	}
+
 	if (!_isdigit(av[1]) || !_isdigit(av[2]))
 	{
 		printf("Error\n");
