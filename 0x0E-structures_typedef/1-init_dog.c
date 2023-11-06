@@ -4,9 +4,9 @@
 /**
  * init_dog - Initializes the dog struct variables
  *
- * @d: Pointer to struct dog
- *
  * @name: String literal
+ *
+ * @d: Pointer to struct dog
  *
  * @age: Age of the dog
  *
@@ -15,10 +15,11 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d)
+	if (d == NULL)
 	{
-		d->name = name;
-		(*d).age = age;
-		d->owner = owner;
+		d = malloc(sizeof(struct dog));
 	}
+	d->name = name;
+	(*d).age = age;
+	d->owner = owner;
 }
