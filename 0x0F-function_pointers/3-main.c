@@ -20,7 +20,7 @@ int main(int ac, char *av[])
 		printf("Error\n");
 		exit(98);
 	}
-	
+
 	num1 = atoi(av[1]);
 	op = av[2];
 	num2 = atoi(av[3]);
