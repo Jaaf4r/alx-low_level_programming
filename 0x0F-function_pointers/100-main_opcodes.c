@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main_opcodes - prints the opcodes of this function
+ * main - prints the opcodes of this function
  * @ac: number of command-line arguments
  * @av: number of command-line arguments
- * 
- * @Return: 0 if successful
+ *
+ * Return: 0 if successful
  */
 
 int main(int ac, char *av[])
@@ -24,7 +24,8 @@ int main(int ac, char *av[])
 		}
 		for (i = 0; i < n_bytes; i++)
 		{
-			printf("%02x%c", (unsigned char)*((char *)prog + i), n_bytes - 1 ? ' ' : '\n');
+			printf("%02x%c",
+					(unsigned char)*((char *)prog + i), n_bytes - 1 ? ' ' : '\n');
 		}
 	}
 	else
