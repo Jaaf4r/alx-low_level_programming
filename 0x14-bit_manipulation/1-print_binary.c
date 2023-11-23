@@ -9,11 +9,6 @@ void print_binary(unsigned long int n)
 	int i, count = 0;
 	unsigned long int iso;
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
 	for (i = sizeof(unsigned int) * 8 - 1;i >= 0; i--)
 	{
 		iso = n >> i;
@@ -29,4 +24,6 @@ void print_binary(unsigned long int n)
 		else if (count)
 			_putchar('0');
 	}
+	if (!count)
+		_putchar('0');
 }
