@@ -7,13 +7,13 @@
 void print_binary(unsigned long int n)
 {
 	int i, count = 0;
-	unsigned long int current;
+	unsigned long int iso;
 
-	for (i = 63; i >= 0; i--)
+	for (i = sizeof(unsigned long int) * 8 - 1; i >= 0; i--)
 	{
-		current = n >> i;
+		iso = n >> i;
 
-		if (current & 1)
+		if (iso & 1)
 		{
 			_putchar('1');
 			count++;
